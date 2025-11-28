@@ -7932,14 +7932,7 @@
         },
 
         getGrowthTime(rarity) {
-            switch(rarity) {
-                case 'common': return 20;
-                case 'uncommon': return 40;
-                case 'rare': return 60;
-                case 'very_rare': return 90;
-                case 'legendary': return 120;
-                default: return 30;
-            }
+            return 3600;
         },
 
         waterPlant(row, col) {
@@ -10112,6 +10105,9 @@
         GAMINGGC: {msg: "UH...", duration: 2000}, // was 4000
         WORDLE: {msg: "UH...", duration: 2000}, // was 4000
         GAMING: {msg: "UH...", duration: 2000}, // was 4000
+        LIGHT: {msg: "SECOND IN ONE", duration: 2000}, // was 4000
+        HAVEN: {msg: "THIRD IN ONE.", duration: 2000}, // was 4000
+        IRON: {msg: "FIRST IN ONE.", duration: 2000}, // was 4000
         SQUIDGAME: {msg: "UH...", duration: 2000}, // was 4000
         GEOMETRYDASH: {msg: "UH...", duration: 2000}, // was 4000
         WISH: {msg: "FORGET IT.", duration: 2000}, // was 4000
@@ -10334,11 +10330,12 @@
         PUZZLE: {msg: "SHIFT WORDS BY THE MOONS. THE SEQUENCE OR RATHER, THE ORDER, IS NECESSARY.", duration: 3000},
         SHIFT: {msg: "SHIFT WORDS BY THE MOONS. THE SEQUENCE OR RATHER, THE ORDER, IS NECESSARY.", duration: 3000},
         WORDS: {msg: "SHIFT WORDS BY THE MOONS. THE SEQUENCE OR RATHER, THE ORDER, IS NECESSARY.", duration: 3000},
-        CALENDAR: {msg: "ENVER, FLEHEIM, MERCURY, PRIMONEM, FAY, JUNEV, JULOV, ARKWAR, SEPTARKWAR, OCTARCH, NOVARCH, DECARCH.", duration: 3000},
+        CALENDAR: {msg: "ENVER, FLEHEIM, MERCURY, PRIMONEM, FAY, JUNEV, JULOV, ARKWAR, SEPTARKWAR, OCTARCH, NOVARCH, DECARCH. THE INCORRECT ORDER.", duration: 3000},
         MONTHS: {msg: "READ THEM BY THE CALENDAR. IT NEEDS TO BE IN ORDER.", duration: 3000},
         MOONS: {msg: "READ THEM BY THE CALENDAR. IT NEEDS TO BE IN ORDER.", duration: 3000},
         SEQUENCE: {msg: "MERCURY, ENVER, FAY, FLEHEIM", duration: 3000},
-        ORDER: {msg: "MERCURY, ENVER, FAY, FLEHEIM", duration: 3000},
+        ORDER: {msg: "ZBW QI PZVOBSFLM NRXQCQE GA WIJ UWBYGQ", duration: 3000},
+        3152: {msg: "ZBW QI PZVOBSFLM NRXQCQE GA WIJ UWBYGQ", duration: 3000},
         MESSAGE: {msg: "ZBW QI PZVOBSFLM NRXQCQE GA WIJ UWBYGQ", duration: 3000},
         ENCRYPTED: {msg: "ZBW QI PZVOBSFLM NRXQCQE GA WIJ UWBYGQ", duration: 3000},
         DECODE: {msg: "ZBW QI PZVOBSFLM NRXQCQE GA WIJ UWBYGQ", duration: 3000},
@@ -10702,7 +10699,6 @@
         POSTOFFICE: {msg: "I HOPE MY LETTER WILL REACH THE RIGHT PLACE TO THEM.", duration: 2000},
         SHERIFF: {msg: "LAW AND ORDER. UH, HEY WAIT...", duration: 2000},
         LAW: {msg: "NONE.", duration: 2000},
-        ORDER: {msg: "MADE BY ME! RULE ONE... DON'T... CHEAT... ARE WE SET?", duration: 2000},
         LOUD: {msg: "SILENCE IS WORSE THAN NOISE. TRUST ME.", duration: 2000},
 
         // SOUND put something special
@@ -20684,7 +20680,3 @@
 </script>
 </body>
 </html>
-
-
-
-
